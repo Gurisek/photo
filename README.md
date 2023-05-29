@@ -1,4 +1,4 @@
-#React photograph portfolio
+# React photograph portfolio
 
 Starting commands:
 ```
