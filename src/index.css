@@ -4,25 +4,28 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body {
     font-family: "Open Sans", sans-serif;
-    font-size: 16px;
+    font-size: 1rem;
     background-color: #e6e6e6;
+    color: #2e2e2e;
 }
 
-/* 1150x969 */
-
-/* responsive */
-
-@media (max-width: 992px) {
-    body {
-        font-size: 14px;
-    }
-
-    .nav_links {
-        display: none;
-    }
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+    color: #141414;
 }
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-size: 1.5rem;
+    font-weight: 500;
+    color: #141414;
+}
+
 

@@ -11,6 +11,10 @@ export default function Navbar() {
         <img className="logo" src={logo} alt="logo" />
       </NavLink>
       <nav>
+        <input type="checkbox" id="check" />
+        <label htmlFor="check">
+          <i class="gg-menu"></i>
+        </label>
         <ul className="nav_links">
           <li>
             <NavLink to="/">
@@ -42,7 +46,6 @@ export default function Navbar() {
               <button>Ceník</button>
             </NavLink>
           </li>
-          <i class="gg-menu"></i>
         </ul>
       </nav>
     </header>
