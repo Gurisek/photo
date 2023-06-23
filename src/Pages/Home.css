@@ -14,7 +14,7 @@ section p {
     padding: 10px;
     margin: 0px 10px 100px 300px;
     width: 600px;
-    height: 400px;
+    height: 450px;
     -webkit-border-radius: 2% 20% 2% 20%;
     -moz-border-radius: 2% 20% 2% 20%;
     -ms-border-radius: 2% 20% 2% 20%;
@@ -22,16 +22,15 @@ section p {
 }
 
 section p h1{
-    padding-top: 40px;
-    font-size: 2rem;
-    margin: 15px 100px;
+    padding-top: 20px;
+    margin: 15px 75px;
     text-align: left;
 }
 
 section img {
     width: 100%;
     height: 100%;
-    object-fit: cover;
+    object-fit: fill;
     margin: 0px 300px 100px 0px;
     border-radius: 20% 2% 20% 2%;
     -webkit-border-radius: 20% 2% 20% 2%;
@@ -42,8 +41,8 @@ section img {
 }
 
 .gallery {
-    width: 85vw;
-    height: 60vmin;
+    width: 850px;
+    height: 600px;
     display: flex;
     gap: 5px;
 }
@@ -51,7 +50,7 @@ section img {
 .gallery img {
     height: 100%;
     flex: 1;
-    object-fit: cover;
+    object-fit: contain;
     overflow: hidden;
     cursor: pointer;
     border-radius: 10px;
@@ -67,5 +66,5 @@ section img {
 }
 
 .gallery img:hover {
-    flex: 3;
+    flex: 2;
 }

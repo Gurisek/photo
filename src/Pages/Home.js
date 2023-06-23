@@ -1,5 +1,5 @@
 import './Home.css'
-import Profile from "../Images/profile.jpg";
+import Profile from "../Images/IMG_9235.jpg";
 
 export default function Home() {
   return (
@@ -15,7 +15,7 @@ export default function Home() {
         <img
           src={Profile}
           alt="profile img"
-          style={{ width: "350px", height: "400px" }}
+          style={{ width: "350px", height: "450px" }}
         />
       </section>
       <div className="gallery" >
