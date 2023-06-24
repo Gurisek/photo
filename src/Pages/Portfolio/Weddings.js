@@ -11,6 +11,7 @@ export default function Weddings() {
   useEffect(() => {
     listAll(imageListRef).then((response) => {
       response.items.forEach((item) => {
+        console.log(item);
         getDownloadURL(item).then((url) => {
           setImageList((prev) => [...prev, url]);
         });
@@ -18,17 +19,23 @@ export default function Weddings() {
     });
   }, []);
 
-const limitedImageList = imageList.slice(0, 32);
+  const limitedImageList = imageList.slice(0, 32);
 
   return (
     <div className="Weddings">
       <h1>Weddings</h1>
-
-      {limitedImageList.map((url, index) => {
-        return (
-          <img key={index} src={url} loading="lazy" alt={`wedding-${index}`} />
-        );
-      })}
+      <div className="gallery_weddings">
+        {limitedImageList.map((url, index) => {
+          return (
+            <img
+              key={index}
+              src={url}
+              loading="lazy"
+              alt={`wedding-${index}`}
+            />
+          );
+        })}
+      </div>
     </div>
   );
 }
