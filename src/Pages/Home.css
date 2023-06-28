@@ -40,7 +40,7 @@ section img {
     box-shadow: 10px 10px 10px #070707ad;
 }
 
-.gallery {
+/* .gallery {
     width: 850px;
     height: 600px;
     display: flex;
@@ -67,4 +67,4 @@ section img {
 
 .gallery img:hover {
     flex: 2;
-}
+} */

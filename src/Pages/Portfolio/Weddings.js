@@ -1,40 +1,24 @@
-import { useEffect, useState } from "react";
-import "../Portfolio/css/Weddings.css";
-import { listAll, ref, getDownloadURL } from "firebase/storage";
-import { storage } from "../../Firebase/config";
+import "./css/Weddings.css";
+import pic1 from "../../Images/Weddings/1/0840-min.jpg";
+import { Link } from "react-router-dom";
 
 export default function Weddings() {
-  const [imageList, setImageList] = useState([]);
-
-  const imageListRef = ref(storage, "Svatba/1");
-
-  useEffect(() => {
-    listAll(imageListRef).then((response) => {
-      response.items.forEach((item) => {
-        console.log(item);
-        getDownloadURL(item).then((url) => {
-          setImageList((prev) => [...prev, url]);
-        });
-      });
-    });
-  }, []);
-
-  const limitedImageList = imageList.slice(0, 32);
-
   return (
     <div className="Weddings">
       <h1>Weddings</h1>
       <div className="gallery_weddings">
-        {limitedImageList.map((url, index) => {
-          return (
-            <img
-              key={index}
-              src={url}
-              loading="lazy"
-              alt={`wedding-${index}`}
-            />
-          );
-        })}
+      <Link to="/weddings/1b47h">
+            <img src={pic1} alt="1" />
+
+            <h2>Manželé 1</h2>
+          </Link>
+        <div className="gallery_item">
+          <img src={pic1} alt="1" />
+          <h2>Manželé 2</h2>
+        </div>
+        <div className="gallery_item">
+
+        </div>
       </div>
     </div>
   );

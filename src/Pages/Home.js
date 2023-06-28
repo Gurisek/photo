@@ -18,12 +18,12 @@ export default function Home() {
           style={{ width: "350px", height: "450px" }}
         />
       </section>
-      <div className="gallery" >
+      {/* <div className="gallery" >
         <img src="https://picsum.photos/200/300" alt="1" />
         <img src="https://picsum.photos/200/300" alt="2" />
         <img src="https://picsum.photos/200/300" alt="3" />
         <img src="https://picsum.photos/200/300" alt="4" />
-      </div>
+      </div> */}
     </div>
   );
 }
