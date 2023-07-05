@@ -8,8 +8,6 @@ export const Price = () => {
   const sendEmail = (e) => {
     e.preventDefault();
 
-    // TODO: reply_to a styling
-
     emailjs
       .sendForm(
         "service_uj54k6c", //service ID
