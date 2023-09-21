@@ -46,6 +46,7 @@ textarea {
 form {
     display: flex;
     flex-direction: column;
+    min-width: 400px;
     align-items: center;
     background-color: #ffffffd2;
     padding: 20px;
