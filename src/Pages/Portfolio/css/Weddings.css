@@ -28,3 +28,25 @@
     transition: all 0.3s ease-in-out;
     margin: 10px;
 }
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a h2 {
+    font-size: 1.7rem;
+    font-weight: 500;
+    text-align: center;
+    margin: 10px;
+    text-decoration: none;
+}
+
+a h2:hover {
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+
+a img:hover {
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.6);
+}
