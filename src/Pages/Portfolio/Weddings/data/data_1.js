@@ -32,7 +32,7 @@ import image31 from "../../../../Images/Weddings/1/1005-min.jpg";
 import image32 from "../../../../Images/Weddings/1/1009-min.jpg";
 
 
-const weddingFirst = [
+const wedding1 = [
     { 
         id: 1,
         img: image1
@@ -164,4 +164,4 @@ const weddingFirst = [
     
 ]
 
-export default weddingFirst;
+export default wedding1;

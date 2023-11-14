@@ -44,7 +44,7 @@ a h2 {
 
 /* bud vybrat gallery_item hover a nebo a img:hover + a h2:hover */
 
-.galerry_item:hover {
+/* .galerry_item:hover {
     transform: scale(0.95);
     transition: all 0.3s ease-in-out;
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.6);
@@ -54,13 +54,13 @@ a h2 {
     -moz-transform: scale(0.95);
     -ms-transform: scale(0.95);
     -o-transform: scale(0.95);
-}
+} */
 
-/* a h2:hover {
+a h2:hover {
     font-size: 1.75rem;
     font-weight: 600;
 }
 
 a img:hover {
     box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.6);
-} */
+}
