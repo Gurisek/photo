@@ -1,8 +1,8 @@
 import "./css/Weddings.css";
+import { Link } from "react-router-dom";
 import pic1 from "../../Images/Weddings/1/0840-min.jpg";
 import pic2 from "../../Images/Weddings/2/0283-min.jpg";
 import pic3 from "../../Images/Weddings/3/0129 cb.jpg";
-import { Link } from "react-router-dom";
 
 export default function Weddings() {
   return (

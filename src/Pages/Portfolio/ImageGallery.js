@@ -1,7 +1,14 @@
-import React, { useState, lazy, Suspense, useRef, useEffect, useCallback } from "react";
-import "../../css/WedOne.css"
+import React, {
+  useState,
+  lazy,
+  Suspense,
+  useRef,
+  useEffect,
+  useCallback,
+} from "react";
+import "./css/WedOne.css";
 
-const LazyImage = lazy(() => import("../../../../Hooks/LazyImage"));
+const LazyImage = lazy(() => import("../../Hooks/LazyImage"));
 
 const ImageGallery = ({ data }) => {
   const [selectedImage, setSelectedImage] = useState(null);
@@ -49,13 +56,16 @@ const ImageGallery = ({ data }) => {
     };
   }, [handleIntersection]);
 
-  const loadImages = useCallback((start, end) => {
-    const imagesToLoad = data.slice(start, end);
-    setLoadedImages((prevLoadedImages) => [
-      ...prevLoadedImages,
-      ...imagesToLoad,
-    ]);
-  }, [data]);
+  const loadImages = useCallback(
+    (start, end) => {
+      const imagesToLoad = data.slice(start, end);
+      setLoadedImages((prevLoadedImages) => [
+        ...prevLoadedImages,
+        ...imagesToLoad,
+      ]);
+    },
+    [data]
+  );
 
   useEffect(() => {
     loadImages(startIndex, endIndex);

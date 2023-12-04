@@ -8,7 +8,7 @@ export default function Personal() {
       <h1>Portrety</h1>
       <div className="gallery_weddings">
         <div className="gallery_item">
-          <Link to="/svatba/1b47h">
+          <Link to="/portret/98J6F">
             <img src={pic1} alt="1" />
             <h2>Pár 1</h2>
           </Link>
