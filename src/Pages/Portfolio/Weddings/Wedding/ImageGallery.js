@@ -23,7 +23,7 @@ const ImageGallery = ({ data }) => {
       const lastEntry = entries[entries.length - 1];
       if (lastEntry.isIntersecting && endIndex < data.length) {
         setStartIndex(endIndex);
-        setEndIndex(endIndex + 6);
+        setEndIndex(endIndex + 2);
       }
     },
     [endIndex, data]
@@ -67,7 +67,7 @@ const ImageGallery = ({ data }) => {
         {loadedImages.map((onePic) => {
           const { id, img } = onePic;
           return (
-            <Suspense key={id} fallback={<div>Loading...</div>}>
+            <Suspense key={id} fallback={<div>Načítání...</div>}>
               <LazyImage src={img} alt={id} onClick={() => openImage(onePic)} />
             </Suspense>
           );

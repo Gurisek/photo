@@ -30,9 +30,10 @@ export default function Navbar() {
                 </div>
               </button>
               <div className="dropdown-content">
-                <NavLink to="/weddings">Svatby</NavLink>
-                <NavLink to="/family">Rodinné fotky</NavLink>
-                <NavLink to="/personal">Osobní fotky</NavLink>
+                <NavLink to="/svatba">Svatby</NavLink>
+                <NavLink to="/rodinne">Rodinné focení</NavLink>
+                <NavLink to="/portret">Portréty</NavLink>
+                <NavLink to="/reklamni_foceni">Reklamní focení</NavLink>
               </div>
             </div>
           </li>
@@ -42,8 +43,8 @@ export default function Navbar() {
             </NavLink>
           </li>
           <li>
-            <NavLink to="/price">
-              <button>Ceník</button>
+            <NavLink to="/sluzby">
+              <button>Kontakt</button>
             </NavLink>
           </li>
         </ul>

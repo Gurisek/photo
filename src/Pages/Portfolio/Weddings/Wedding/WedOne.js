@@ -1,7 +1,7 @@
 import React from "react";
 import ImageGallery from "./ImageGallery";
-import data_1 from "../data/data_1";
+import wedding1 from "./imageList/wedding1";
 
 export const WedOne = () => {
-  return <ImageGallery data={data_1} />;
+  return <ImageGallery data={wedding1} />;
 };
