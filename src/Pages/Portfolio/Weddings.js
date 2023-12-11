@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import pic1 from "../../Images/Weddings/1/0840-min.jpg";
 import pic2 from "../../Images/Weddings/2/0283-min.jpg";
 import pic3 from "../../Images/Weddings/3/0129 cb.jpg";
+import pic4 from "../../Images/Weddings/4/272-min.jpg";
 
 export default function Weddings() {
   return (
@@ -25,6 +26,12 @@ export default function Weddings() {
           <Link to="/svatba/65SB7">
             <img src={pic3} alt="3" />
             <h2>Manželé 3</h2>
+          </Link>
+        </div>
+        <div className="gallery_item">
+          <Link to="/svatba/JN272">
+            <img src={pic4} alt="4" />
+            <h2>Manželé 4</h2>
           </Link>
         </div>
       </div>

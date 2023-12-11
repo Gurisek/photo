@@ -2,12 +2,13 @@ import Navbar from "./Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import Weddings from "./Pages/Portfolio/Weddings";
-import { WedOne } from "./Pages/Portfolio/Weddings/Wedding/WedOne";
+import { Wed1 } from "./Pages/Portfolio/Weddings/Wedding/Wed1";
 import { Price } from "./Pages/Price";
-import { WedTwo } from "./Pages/Portfolio/Weddings/Wedding/WedTwo";
+import { Wed2 } from "./Pages/Portfolio/Weddings/Wedding/Wed2";
 import { Wed3 } from "./Pages/Portfolio/Weddings/Wedding/Wed3";
 import Personal from "./Pages/Portfolio/Personal";
 import { Pers1 } from "./Pages/Portfolio/Personal/Pers1";
+import { Wed4 } from "./Pages/Portfolio/Weddings/Wedding/Wed4";
 
 function App() {
   return (
@@ -21,9 +22,10 @@ function App() {
 
         {/* Svatby */}
         <Route path="/svatba" element={<Weddings />} />
-        <Route path="/svatba/1b47h" element={<WedOne />} />
-        <Route path="/svatba/1b88a" element={<WedTwo />} />
+        <Route path="/svatba/1b47h" element={<Wed1 />} />
+        <Route path="/svatba/1b88a" element={<Wed2 />} />
         <Route path="/svatba/65SB7" element={<Wed3 />} />
+        <Route path="/svatba/JN272" element={<Wed4 />} />
 
         {/* rodinne */}
         <Route path="/rodinne" element={<h1>rodinne</h1>} />
