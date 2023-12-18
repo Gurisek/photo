@@ -9,6 +9,7 @@ import { Wed3 } from "./Pages/Portfolio/Weddings/Wedding/Wed3";
 import Personal from "./Pages/Portfolio/Personal";
 import { Pers1 } from "./Pages/Portfolio/Personal/Pers1";
 import { Wed4 } from "./Pages/Portfolio/Weddings/Wedding/Wed4";
+import NotFound from "./Pages/NotFound";
 
 function App() {
   return (
@@ -36,6 +37,9 @@ function App() {
 
         {/* reklamni foceni */}
         <Route path="/reklamni_foceni" element={<h1>reklamni foceni</h1>} />
+
+        {/* 404 */}
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </BrowserRouter>
   );
