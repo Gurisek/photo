@@ -65,7 +65,7 @@
   
   @media screen and (max-width: 820px) {
     .gallery img {
-      max-width: 350px;
-      max-height: 300px;
+      max-width: 375px;
+      max-height: 325px;
     }
   }
