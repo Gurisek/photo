@@ -5,7 +5,7 @@ import * as yup from "yup";
 import { useForm } from "react-hook-form";
 import { yupResolver } from "@hookform/resolvers/yup";
 
-export const Price = () => {
+export default function Price() {
   const form = useRef();
   const [isSuccess, setIsSuccess] = useState(false);
   const [isError, setIsError] = useState(false);
@@ -49,6 +49,37 @@ export const Price = () => {
       <div className="container-price">
         <div className="price-text">
           <h1>Ceník</h1>
+          <table>
+          <thead>
+            <td>
+              <th>cenik</th>
+            </td>
+            <td>
+              <th>mena</th>
+            </td>
+            <td>
+              <th>mena2</th>
+            </td>
+            <td>
+              <th>mena3</th>
+            </td>
+          </thead>
+
+          <tbody>
+            <th>
+              <td>aaaaa1</td>
+            </th>
+            <th>
+              <td>aaaaa2</td>
+            </th>
+            <th>
+              <td>aaaaa3</td>
+            </th>
+            <th>
+              <td>aaaaa4</td>
+            </th>
+          </tbody>
+          </table>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
           </p>
@@ -64,7 +95,9 @@ export const Price = () => {
           {...register("from_name")}
         />
         {formState.errors.from_name && (
-          <p className="error-message">Jméno je povinné a musí mít alespoň 3 znaky.</p>
+          <p className="error-message">
+            Jméno je povinné a musí mít alespoň 3 znaky.
+          </p>
         )}
 
         <label>E-mail</label>
@@ -85,14 +118,22 @@ export const Price = () => {
           {...register("message")}
         />
         {formState.errors.message && (
-          <p className="error-message">Zpráva je povinná a musí mít alespoň 10 znaků.</p>
+          <p className="error-message">
+            Zpráva je povinná a musí mít alespoň 10 znaků.
+          </p>
         )}
 
-        {isSuccess && <p className="success-message">Zpráva byla úspěšně odeslána!</p>}
-        {isError && <p className="error-message">Odeslání zprávy selhalo. Zkuste to prosím znovu.</p>}
+        {isSuccess && (
+          <p className="success-message">Zpráva byla úspěšně odeslána!</p>
+        )}
+        {isError && (
+          <p className="error-message">
+            Odeslání zprávy selhalo. Zkuste to prosím znovu.
+          </p>
+        )}
 
         <input type="submit" value="Odeslat" />
       </form>
     </div>
   );
-};
+}

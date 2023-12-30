@@ -1,0 +1,67 @@
+Weddings.js odkazy:
+{/* <h1>Svatby</h1>
+      <div className="gallery_weddings">
+        <div className="gallery_item">
+          <Link to="/svatba/1b47h">
+            <img src={pic1} alt="1" />
+            <h2>Manželé 1</h2>
+          </Link>
+        </div>
+        <div className="gallery_item">
+          <Link to="/svatba/1b88a">
+            <img src={pic2} alt="2" />
+            <h2>Manželé 2</h2>
+          </Link>
+        </div>
+        <div className="gallery_item">
+          <Link to="/svatba/65SB7">
+            <img src={pic3} alt="3" />
+            <h2>Manželé 3</h2>
+          </Link>
+        </div>
+        <div className="gallery_item">
+          <Link to="/svatba/JN272">
+            <img src={pic4} alt="4" />
+            <h2>Manželé 4</h2>
+          </Link>
+        </div>
+      </div> */}
+
+      App.js :
+      {/* <Route path="/svatba/1b47h" element={<Wed1 />} />
+        <Route path="/svatba/1b88a" element={<Wed2 />} />
+        <Route path="/svatba/65SB7" element={<Wed3 />} />
+        <Route path="/svatba/JN272" element={<Wed4 />} /> */}
+
+  -------------------------------------------------------
+
+Personal.js odkazy:
+<div className="Weddings">
+      <h1>Portrety</h1>
+      <div className="gallery_weddings">
+        <div className="gallery_item">
+          <Link to="/portret/98J6F">
+            <img src={pic1} alt="1" />
+            <h2>Pár 1</h2>
+          </Link>
+        </div>
+        <div className="gallery_item">
+          <Link to="/svatba/1b88a">
+            <img src={pic1} alt="2" />
+            <h2>Manželé 2</h2>
+          </Link>
+        </div>
+        <div className="gallery_item">
+          <Link to="/svatba/65SB7">
+            <img src={pic1} alt="3" />
+            <h2>Manželé 3</h2>
+          </Link>
+        </div>
+      </div>
+    </div>
+
+    App.js:
+{/* <Route path="/portret/98J6F" element={<Pers1 />} /> */}
+
+------------------------------------------------------
+#TODO: Potřeba uklidit všechny přebytečné Wed1, Wed2 a td + složky obrázků a to samí u portrétů !!!!
