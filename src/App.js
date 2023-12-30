@@ -2,6 +2,7 @@ import Navbar from "./Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Home from "./Pages/Home";
 import Price from "./Pages/Price";
+import Sluzby from "./Pages/Sluzby";
 import Weddings from "./Pages/Portfolio/Weddings";
 import Portrety from "./Pages/Portfolio/Portrety";
 import NotFound from "./Pages/NotFound";
@@ -18,8 +19,9 @@ function App() {
       <Routes>
         {/* ostatni odkazy */}
         <Route path="/" element={<Home />} />
-        <Route path="/sluzby" element={<Price />} />
+        <Route path="/kontakt" element={<Price />} />
         <Route path="/about" element={<h1>O mně</h1>} />
+        <Route path="/sluzby" element={<Sluzby />} />
 
         {/* Svatby */}
         <Route path="/svatba" element={<Weddings />} />

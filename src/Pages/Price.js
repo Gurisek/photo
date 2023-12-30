@@ -1,4 +1,4 @@
-import "./Price.css";
+import "./css/Price.css";
 import React, { useRef, useState } from "react";
 import emailjs from "@emailjs/browser";
 import * as yup from "yup";

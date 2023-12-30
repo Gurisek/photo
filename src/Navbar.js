@@ -44,6 +44,11 @@ export default function Navbar() {
           </li>
           <li>
             <NavLink to="/sluzby">
+              <button>Služby</button>
+            </NavLink>
+          </li>
+          <li>
+            <NavLink to="/kontakt">
               <button>Kontakt</button>
             </NavLink>
           </li>
