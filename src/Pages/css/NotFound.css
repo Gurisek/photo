@@ -12,10 +12,12 @@
     margin: 10px 20px 10px 20px;
 }
 
-.err p Link {
+.err p a {
+    color: #000000;
+    font-weight: 900;
     text-decoration:underline;
 }
 
-.err p Link:hover {
-    color: #df8079;
+.err p a:hover {
+    color: #8d433e;
 }

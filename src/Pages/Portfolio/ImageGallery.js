@@ -77,7 +77,7 @@ const ImageGallery = ({ data }) => {
         {loadedImages.map((onePic) => {
           const { id, img } = onePic;
           return (
-            <Suspense key={id} fallback={<div>Načítání...</div>}>
+            <Suspense key={id} fallback={<div></div>}>
               <LazyImage src={img} alt={id} onClick={() => openImage(onePic)} />
             </Suspense>
           );
