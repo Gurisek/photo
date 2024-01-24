@@ -12,6 +12,7 @@ import svatbyImageList from "./Weddings/Wedding/imageList/svatbyImageList.js";
 export default function Weddings() {
   return (
     <div className="Weddings">
+      <h1>Svatby</h1>
       <ImageGallery data={svatbyImageList} />
     </div>
   );

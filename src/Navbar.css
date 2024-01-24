@@ -133,13 +133,14 @@ nav a:hover {
 }
 
 .gg-menu {
-  --ggs: 1.5;
+  --ggs: 2;
   cursor: pointer;
   display: none;
 }
 
 #check {
   display: none;
+  height: 20px;
 }
 
 /* 1150x969 */

@@ -26,7 +26,7 @@ export default function Sluzby() {
                         <td>Produkty</td>
                     </tr>
                     <tr>
-                        <td>25 000,-</td>
+                        <td>od 25 000,-</td>
                         <td>200,-/ks nebo 500,-/album</td>
                         <td>350,-/ks</td>
                     </tr>

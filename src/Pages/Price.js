@@ -48,41 +48,33 @@ export default function Price() {
     <div className="price">
       <div className="container-price">
         <div className="price-text">
-          <h1>Ceník</h1>
           <table>
-          <thead>
-            <td>
-              <th>cenik</th>
-            </td>
-            <td>
-              <th>mena</th>
-            </td>
-            <td>
-              <th>mena2</th>
-            </td>
-            <td>
-              <th>mena3</th>
-            </td>
-          </thead>
-
-          <tbody>
-            <th>
-              <td>aaaaa1</td>
-            </th>
-            <th>
-              <td>aaaaa2</td>
-            </th>
-            <th>
-              <td>aaaaa3</td>
-            </th>
-            <th>
-              <td>aaaaa4</td>
-            </th>
-          </tbody>
-          </table>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam
-          </p>
+                <caption>Ceník</caption>
+                <thead>
+                    <tr>
+                        <th>1. sluzba</th>
+                        <th>2. urceni</th>
+                        <th>3. cena</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Celodenní focení</td>
+                        <td>Portréty</td>
+                        <td>Reklamní focení</td>
+                    </tr>
+                    <tr>
+                        <td>Svatby, párty, narozeniny</td>
+                        <td>Jednotlivci, páry</td>
+                        <td>Produkty</td>
+                    </tr>
+                    <tr>
+                        <td>od 25 000,-</td>
+                        <td>200,-/ks nebo 500,-/album</td>
+                        <td>350,-/ks</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
       </div>
 

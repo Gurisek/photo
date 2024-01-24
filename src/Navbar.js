@@ -2,7 +2,7 @@ import "./Navbar.css";
 import React from "react";
 // import Triangle from "./components/Triangle";
 import { NavLink } from "react-router-dom";
-import logo from "./Images/7.jpg";
+import logo from "./Images/logo1x1.jpg";
 
 export default function Navbar() {
   return (

@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <div className="Home-container">
       <Carousel />
-      <SocialLinks />
+      {/* <SocialLinks /> */}
     </div>
     
   );
