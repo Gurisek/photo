@@ -11,9 +11,9 @@ export default function Navbar() {
         <img className="logo" src={logo} alt="logo" />
       </NavLink>
       <nav>
-        <input type="checkbox" id="check" />
-        <label htmlFor="check">
-          <i class="gg-menu"></i>
+        <input type="checkbox" className="nav_checkbox" id="check" />
+        <label htmlFor="check" className="nav_button_menu">
+          <div className="menu_btn"><i class="gg-menu"></i></div>
         </label>
         <ul className="nav_links">
           <li>

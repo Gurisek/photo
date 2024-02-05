@@ -30,10 +30,10 @@ const Footer = () => {
         <div className="col-1-of-2">
           <div className="social_media_links">
             <a href="/" className="social_media_link">
-              <i className="gg-facebook"></i>
+              <i className="gg-facebook" id="icon"></i>
             </a>
             <a href="/" className="social_media_link">
-              <i className="gg-instagram"></i>
+              <i className="gg-instagram" id="icon"></i>
             </a>
           </div>
         </div>
