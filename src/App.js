@@ -6,39 +6,40 @@ import Sluzby from "./Pages/Sluzby";
 import Weddings from "./Pages/Portfolio/Weddings";
 import Portrety from "./Pages/Portfolio/Portrety";
 import NotFound from "./Pages/NotFound";
-// import { Wed1 } from "./Pages/Portfolio/Weddings/Wedding/Wed1";
-// import { Wed2 } from "./Pages/Portfolio/Weddings/Wedding/Wed2";
-// import { Wed3 } from "./Pages/Portfolio/Weddings/Wedding/Wed3";
-// import { Wed4 } from "./Pages/Portfolio/Weddings/Wedding/Wed4";
-// import { Pers1 } from "./Pages/Portfolio/Personal/Pers1";
+import Footer from "./Footer";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Navbar />
-      <Routes>
-        {/* ostatni odkazy */}
-        <Route path="/" element={<Home />} />
-        <Route path="/kontakt" element={<Price />} />
-        <Route path="/about" element={<h1>O mně</h1>} />
-        <Route path="/sluzby" element={<Sluzby />} />
+    <div className="app">
+      <BrowserRouter>
+        <Navbar />
+        <div className="content">
+          <Routes>
+            {/* ostatni odkazy */}
+            <Route path="/" element={<Home />} />
+            <Route path="/kontakt" element={<Price />} />
+            <Route path="/about" element={<h1>O mně</h1>} />
+            <Route path="/sluzby" element={<Sluzby />} />
 
-        {/* Svatby */}
-        <Route path="/svatba" element={<Weddings />} />
+            {/* Svatby */}
+            <Route path="/svatba" element={<Weddings />} />
 
-        {/* rodinne */}
-        <Route path="/rodinne" element={<h1>rodinne</h1>} />
+            {/* rodinne */}
+            <Route path="/rodinne" element={<h1>rodinne</h1>} />
 
-        {/* portrety / osobni foceni (domluvit se s terkou ohledne nazvu) */}
-        <Route path="/portret" element={<Portrety />} />
+            {/* portrety / osobni foceni (domluvit se s terkou ohledne nazvu) */}
+            <Route path="/portret" element={<Portrety />} />
 
-        {/* reklamni foceni */}
-        <Route path="/reklamni_foceni" element={<h1>reklamni foceni</h1>} />
+            {/* reklamni foceni */}
+            <Route path="/reklamni_foceni" element={<h1>reklamni foceni</h1>} />
 
-        {/* 404 */}
-        <Route path="*" element={<NotFound />} />
-      </Routes>
-    </BrowserRouter>
+            {/* 404 */}
+            <Route path="*" element={<NotFound />} />
+          </Routes>
+        </div>
+        <Footer />
+      </BrowserRouter>
+    </div>
   );
 }
 

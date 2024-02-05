@@ -1,0 +1,104 @@
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/facebook.css');
+@import url('https://unpkg.com/css.gg@2.0.0/icons/css/instagram.css');
+
+.footer {
+  background-color: #f8f9fa;
+  padding: 3rem 0;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.row {
+  display: flex;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.col-1-of-2 {
+  width: calc((100% - 3rem) / 2);
+  display: flex;
+  
+  
+  &:not(:last-child) {
+    margin-right: 3rem;
+  }
+}
+
+.footer_navigation {
+  width: 100%;
+}
+
+.footer_list {
+  list-style: none;
+}
+
+.footer_item {
+  display: inline-block;
+
+  &:not(:last-child) {
+    margin-right: 1.5rem;
+  }
+}
+
+.footer_link {
+  &:link,
+  &:visited {
+    color: #6c757d;
+    text-decoration: none;
+    font-size: 14px;
+    display: inline-block;
+  }
+
+  &:hover,
+  &:active {
+    color: black;
+    box-shadow: 0 1rem 2rem rgba(black, 0.4);
+  }
+}
+
+.footer ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.footer ul li {
+  display: inline;
+  margin: 0 10px;
+}
+
+.social_media_links {
+  display: flex;
+  justify-content: center;
+}
+  .social_media_link {
+    &:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+
+/* .text-muted {
+  color: #6c757d;
+  font-size: 14px
+}
+
+.footer a:hover {
+  color: #555;
+}
+
+/* Dodelat footer odkazy na socials 
+.container {
+    flex-direction: row;
+  margin-top: 10px;
+}
+
+.footer a {
+  color: #060606;
+  text-decoration: none;
+  margin: 0 10px;
+  font-size: 1rem;
+  transition: all 0.3s ease-in-out;
+  padding: 10px;
+} */

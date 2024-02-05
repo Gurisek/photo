@@ -77,6 +77,7 @@ export default function Price() {
             </table>
         </div>
       </div>
+      <p></p>
 
       <form ref={form} onSubmit={handleSubmit(sendEmail)}>
         <label>Jméno příjmení</label>
