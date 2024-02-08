@@ -40,7 +40,7 @@ const Footer = () => {
       </div>
       <div className="row">
         <p className="footer_copy">
-          &copy; 2023 Tereza Josefíková. All rights reserved.
+          &copy; {new Date().getFullYear()} Tereza Josefíková. All rights reserved.
         </p>
       </div>
     </footer>

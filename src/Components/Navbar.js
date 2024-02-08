@@ -1,8 +1,7 @@
 import "./Navbar.css";
 import React from "react";
-// import Triangle from "./components/Triangle";
 import { NavLink } from "react-router-dom";
-import logo from "./Images/logo1x1.jpg";
+import logo from "../Images/logo1x1.jpg";
 
 export default function Navbar() {
   return (
@@ -13,7 +12,7 @@ export default function Navbar() {
       <nav>
         <input type="checkbox" className="nav_checkbox" id="check" />
         <label htmlFor="check" className="nav_button_menu">
-          <div className="menu_btn"><i class="gg-menu"></i></div>
+          <div className="menu_btn"><i className="gg-menu"></i></div>
         </label>
         <ul className="nav_links">
           <li>
@@ -26,7 +25,7 @@ export default function Navbar() {
               <button className="dropbtn">
                 <div className="btn-content">
                   <span>Portfolio</span>
-                  <i class="gg-chevron-down"></i>
+                  <i className="gg-chevron-down"></i>
                 </div>
               </button>
               <div className="dropdown-content">
@@ -40,11 +39,6 @@ export default function Navbar() {
           <li>
             <NavLink to="/about">
               <button>O mně</button>
-            </NavLink>
-          </li>
-          <li>
-            <NavLink to="/sluzby">
-              <button>Služby</button>
             </NavLink>
           </li>
           <li>

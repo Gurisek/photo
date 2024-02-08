@@ -8,7 +8,7 @@ import React, {
 } from "react";
 import "./css/WedOne.css";
 
-const LazyImage = lazy(() => import("../../Hooks/LazyImage"));
+const LazyImage = lazy(() => import("../../Components/LazyImage"));
 
 const ImageGallery = ({ data }) => {
   const [selectedImage, setSelectedImage] = useState(null);
