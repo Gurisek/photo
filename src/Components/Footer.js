@@ -7,8 +7,8 @@ const Footer = () => {
     <footer className="footer">
       <div className="row">
         <div className="col-1-of-2">
-          <div className="footer_navigation">
             <ul className="footer_list">
+              <div className="flex-column">
               <li className="footer_item">
                 <Link to={"/kontakt"} className="footer_link">
                   Kontaktuj mě
@@ -24,8 +24,8 @@ const Footer = () => {
                   Dobré vědět
                 </Link>
               </li>
+              </div>
             </ul>
-          </div>
         </div>
         <div className="col-1-of-2">
           <div className="social_media_links">
@@ -48,13 +48,3 @@ const Footer = () => {
 };
 
 export default Footer;
-
-      //  <div className="container">
-      //   <Link to={'/kontakt'}>Kontaktuj mě</Link>
-      //   <Link to={'/about'}>O mně</Link>
-      //   <div className="social">
-      //       <a href='/'><i className='gg-facebook'></i></a>
-      //   </div>
-      
-      //   <p className="text-muted">Copyright &copy; 2023 Tereza Josefíková. All rights reserved.</p>
-      // </div> 
