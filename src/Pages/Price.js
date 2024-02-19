@@ -46,39 +46,97 @@ export default function Price() {
 
   return (
     <div className="price">
-      <div className="container-price">
-        <div className="price-text">
-          <table>
-                <caption>Ceník</caption>
-                <thead>
-                    <tr>
-                        <th>1. sluzba</th>
-                        <th>2. urceni</th>
-                        <th>3. cena</th>
-                    </tr>
-                </thead>
-                <tbody>
-                    <tr>
-                        <td>Celodenní focení</td>
-                        <td>Portréty</td>
-                        <td>Reklamní focení</td>
-                    </tr>
-                    <tr>
-                        <td>Svatby, párty, narozeniny</td>
-                        <td>Jednotlivci, páry</td>
-                        <td>Produkty</td>
-                    </tr>
-                    <tr>
-                        <td>od 25 000,-</td>
-                        <td>200,-/ks nebo 500,-/album</td>
-                        <td>350,-/ks</td>
-                    </tr>
-                </tbody>
+      <div className="price-box">
+        <div className="container-price">
+          <div className="price-text">
+            <table>
+              <caption>Ceník</caption>
+              <thead>
+                <tr>
+                  <th>1. sluzba</th>
+                  <th>2. urceni</th>
+                  <th>3. cena</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Celodenní focení</td>
+                  <td>Portréty</td>
+                  <td>Reklamní focení</td>
+                </tr>
+                <tr>
+                  <td>Svatby, párty, narozeniny</td>
+                  <td>Jednotlivci, páry</td>
+                  <td>Produkty</td>
+                </tr>
+                <tr>
+                  <td>od 25 000,-</td>
+                  <td>200,-/ks nebo 500,-/album</td>
+                  <td>350,-/ks</td>
+                </tr>
+              </tbody>
             </table>
+          </div>
+        </div>
+        <div className="price-info-box">
+          <div className="price-info">
+            <h2>Chcete si objednat fotografa?</h2>
+            <p>
+              Pokud máte zájem o mé služby, neváhejte mě kontaktovat. Ráda se s
+              vámi domluvím na termínu a podmínkách.
+            </p>
+            <p>
+              Pokud máte nějaké dotazy, nebo byste chtěli vědět více informací,
+              neváhejte mě kontaktovat.
+            </p>
+          </div>
+          <div className="price-dobre-vedet">
+            <details>
+              <summary>Jak se připravit na focení?</summary>
+              <p>
+                Budu ráda, když přípravě na focení věnujete trochu času. Pokud
+                si nevíte rady, je dobré si vzít víc věcí s sebou (oblečení,
+                doplňky, šperky). Slaďte své oblečení stylem a barevně.
+              </p>
+              <p>
+                Nezapomeňte na upravené vlasy a dámy na líčení. Nechci a nebudu
+                Vás nutit do oblečení ve kterém se necítíte, buďte sami sebou.
+              </p>
+              <p>
+                Čím více péče věnujete přípravě, tím lepší bude výsledek. Hlavní
+                je uvolněnost a dobrá nálada.
+              </p>
+
+              <p>
+                Preferuji se o focení předem domluvit, aby bylo jasné jakou máte
+                představu a podle toho přizpůsobíme lokalitu, makeup, barvu
+                pozadí a celkový styl focení.
+              </p>
+            </details>
+            <details>
+              <summary>A co svatby?</summary>
+              <p>
+                Uveďte prosím místo a čas konání, vaší stručnou představu o
+                focení.
+              </p>
+              <p>
+                Před samotnou svatbou se snoubenci proberu průběh celého dne,
+                preferuji osobní schůzku, je možné společně navštívit místo
+                obřadu a hostiny.
+              </p>
+              <p>
+                Seznámíme se, vymyslíme si místa, pozice, situace jak se chcete
+                nechat vyfotit. Řekneme si praktické rady k focení obřadu.
+              </p>
+              <p>
+                Při tomto setkání se krásně na všem domluvíme a naplánujeme si
+                den tak, aby pro Vás bylo focení příjemným zpestřením, nikoli
+                obtěžující povinností.
+              </p>
+            </details>
+          </div>
         </div>
       </div>
-      <p></p>
-
       <form ref={form} onSubmit={handleSubmit(sendEmail)}>
         <label>Jméno příjmení</label>
         <input
