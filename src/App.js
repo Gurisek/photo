@@ -6,6 +6,7 @@ import Weddings from "./Pages/Portfolio/Weddings";
 import Portrety from "./Pages/Portfolio/Portrety";
 import NotFound from "./Pages/NotFound";
 import { Reklamni } from "./Pages/Portfolio/Reklamni";
+import About from './Pages/About';
 
 function App() {
   return (
@@ -15,7 +16,7 @@ function App() {
           <Route path="/" element={<Layout />}>
             <Route index element={<Home />} />
             <Route path="kontakt" element={<Price />} />
-            <Route path="about" element={<h1>O mne</h1>} />
+            <Route path="about" element={<About />} />
             <Route path="svatba" element={<Weddings />} />
             <Route path="rodinne" element={<h1>rodinne</h1>} />
             <Route path="portret" element={<Portrety />} />
