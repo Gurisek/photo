@@ -10,8 +10,9 @@ button {
 header {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
   padding: 5px 10%;
+  margin-bottom: 2vh;
   width: 100%;
   z-index: 1000;
 }
