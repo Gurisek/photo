@@ -5,8 +5,9 @@ import Price from "./Pages/Price";
 import Weddings from "./Pages/Portfolio/Weddings";
 import Portrety from "./Pages/Portfolio/Portrety";
 import NotFound from "./Pages/NotFound";
-import { Reklamni } from "./Pages/Portfolio/Reklamni";
+import Reklamni from "./Pages/Portfolio/Reklamni";
 import About from './Pages/About';
+import Rodinne from "./Pages/Portfolio/Rodinne";
 
 function App() {
   return (
@@ -18,9 +19,9 @@ function App() {
             <Route path="kontakt" element={<Price />} />
             <Route path="about" element={<About />} />
             <Route path="svatba" element={<Weddings />} />
-            <Route path="rodinne" element={<h1>rodinne</h1>} />
+            <Route path="rodinne" element={<Rodinne />} />
             <Route path="portret" element={<Portrety />} />
-            <Route path="reklamni_foceni" element={<Reklamni/>} />
+            <Route path="propagacni" element={<Reklamni/>} />
           </Route>
           <Route path="*" element={<NotFound />} />
         </Routes>

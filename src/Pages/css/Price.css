@@ -111,13 +111,13 @@ tbody tr:nth-child(even) {
   max-width: 800px;
   margin: 25px auto;
   padding: 20px;
-  background-color: #f8f9fa;
+  /* background-color: #f8f9fa;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   -ms-border-radius: 10px;
-  -o-border-radius: 10px;
+  -o-border-radius: 10px; */
 }
 
 .price-info h2 {
@@ -149,7 +149,7 @@ tbody tr:nth-child(even) {
 
 details {
   padding: 10px;
-  background-color: #e4eaef;
+  background-color: #f8f9fa;
   border-radius: 5px;
   display: flex;
 }

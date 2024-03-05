@@ -9,6 +9,9 @@ import portretyImageList from "./Personal/imageList/portretyImageList.js";
 export default function Personal() {
   return (
     <div className="Weddings">
+      <h1>Portréty</h1>
+      <p>asdad asdasd asdasd</p>
+      <br />
       <ImageGallery data={portretyImageList} />
     </div>
   );

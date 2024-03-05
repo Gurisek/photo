@@ -1,7 +1,7 @@
 import "./Navbar.css";
 import React from "react";
 import { NavLink } from "react-router-dom";
-import logo from "../Images/logo1x1.jpg";
+import logo from "../Images/logo.jpg";
 
 export default function Navbar() {
   return (
@@ -32,7 +32,7 @@ export default function Navbar() {
                 <NavLink to="/svatba">Svatby</NavLink>
                 <NavLink to="/rodinne">Rodinné focení</NavLink>
                 <NavLink to="/portret">Portréty</NavLink>
-                <NavLink to="/reklamni_foceni">Reklamní focení</NavLink>
+                <NavLink to="/propagacni">Propagační focení</NavLink>
               </div>
             </div>
           </li>
