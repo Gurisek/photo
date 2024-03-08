@@ -10,7 +10,7 @@ button {
 header {
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   padding: 5px 10%;
   margin-bottom: 2vh;
   width: 100%;
@@ -162,6 +162,7 @@ nav a:hover {
 }
 
 .menu_btn {
+  display: none;
   height: 1.5rem;
   width: 2.5rem;
   padding: 0.5rem;
@@ -185,6 +186,14 @@ nav a:hover {
   .gg-menu {
     display: block;
     z-index: 9998;
+  }
+
+  .menu_btn{
+    display: block;
+  }
+
+  nav {
+    margin-top: 25px;
   }
 
   .nav_links {
